@@ -1,0 +1,92 @@
+/* Global Styles */
+body {
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Dark Mode Styles */
+.bg-dark {
+  background: rgb(14,8,9);
+background: linear-gradient(54deg, rgba(14,8,9,1) 0%, rgba(25,5,94,1) 100%);
+  color: #ffffff !important;
+}
+
+.bg-light {
+  background-color: #f8f9fa !important;
+  color: #000000 !important;
+}
+
+/* Container */
+.container {
+  max-width: 900px;
+}
+
+/* Dark Mode Toggle Button */
+.btn-outline-primary {
+  font-weight: bold;
+  border-radius: 25px;
+}
+
+/* Pricing Table */
+.card {
+  border-radius: 10px;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Pricing Table - Plan Titles */
+.card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.card h4 {
+  font-size: 1.2rem;
+  color: #007bff;
+}
+
+/* Pricing Button */
+.card .btn {
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+/* FAQ Section */
+.bg-dark .accordion .card{
+  color: #ffffff;
+}
+.accordion .card {
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.05);
+  transition: background 0.2s ease-in-out;
+}
+
+.accordion .card-header {
+  padding: 15px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  border-radius: 10px;
+}
+
+.accordion .card-body {
+  padding: 15px;
+  font-size: 0.95rem;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 0 0 10px 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .btn-outline-primary {
+    width: 100%;
+  }
+
+  .card {
+    margin-bottom: 15px;
+  }
+}
